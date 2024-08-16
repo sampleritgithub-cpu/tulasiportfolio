@@ -1,0 +1,16 @@
+/* Basic border styling for all images */
+img {
+    border: 2px solid black; /* Sets a solid black border with 2px width */
+    border-radius: 8px;      /* Optional: Rounds the corners of the border */
+    padding: 5px;            /* Optional: Adds space between the image and border */
+    display: block;          /* Removes any extra space below the image */
+    margin: 10px 0;          /* Adds margin to create space around the image */
+}
+
+/* Styling specific to images within a container */
+.image-container img {
+    border: 3px dashed red;  /* Example: Dashed red border with 3px width */
+    border-radius: 10px;     /* Example: More pronounced rounding of corners */
+    padding: 10px;           /* Adds more space between the image and border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow for a 3D effect */
+}

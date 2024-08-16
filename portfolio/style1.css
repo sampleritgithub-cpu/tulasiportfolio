@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:black;
+}
+
+.header {
+    text-align: center; /* Center-align text in header */
+    margin-bottom: 10px;
+    margin-left: 20%; /* Reduced space between header and gallery */
+}
+
+.header h1 {
+    font-size: 12rem; /* Adjust the font size */
+    color:white; /* Dark text color for contrast */
+    margin: 0; /* Remove default margins */
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 5px; /* Padding around the gallery container */
+    box-sizing: border-box;
+    padding: 25px;
+    border-color:black;
+    border-width: 35px;
+    border-style:solid ; /* Include padding and border in the element's total width and height */
+}
+
+.image-container {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 3fr); /* 3 columns */
+    grid-template-rows: repeat(4, auto); /* 4 rows with dynamic height based on content */
+    gap: 25px; /* Space between images */
+    background-color: black; /* Background color for the container */
+    border: 4px solid #ddd; /* Border around the image container */
+    border-radius: 9px; /* Rounded corners for the container */
+    box-sizing: border-box; /* Ensure padding and border are included in width/height */
+    max-width: 2600px; /* Limit max-width to fit within the viewport */
+    padding: 10px; /* Padding inside the image container */
+    position: relative;
+}
+
+.image-container img {
+    width: 100%; /* Full width within the grid cell */
+    height: auto; /* Maintain aspect ratio */
+    border: 5px solid #000; /* Black border around images */
+    border-radius: 8px; /* Rounded corners for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s;
+    object-fit: cover; /* Ensure images cover their grid cell while maintaining aspect ratio */
+}
+
+.image-container img:hover {
+    transform: scale(2.05); /* Slightly enlarge image on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect */
+}

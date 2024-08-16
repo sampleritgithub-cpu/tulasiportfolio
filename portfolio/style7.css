@@ -1,0 +1,78 @@
+/* Style for body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color:black;
+    color: white;
+}
+
+/* Style for headings */
+h1 {
+    color:yellow;
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-decoration: solid;
+}
+
+h2 {
+    color: palevioletred;
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* Style for paragraphs */
+p {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Style for span elements */
+span {
+    font-weight: bold;
+    color:rgb(109, 0, 128);
+}
+
+/* Style for links */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #5c67f2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: pink;
+}
+
+/* Adjustments for responsive design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    a {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
